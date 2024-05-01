@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DataChannel vs Websocket</title>
+  </head>
+  <body>
+    <h1>DataChannel</h1>
+    <textarea
+      rows="5"
+      cols="50"
+      id="dataChannelSend"
+      disabled
+      placeholder="1: Press Start; 2: Enter text; 3: Press Send."
+    ></textarea>
+    <textarea rows="5" cols="50" id="dataChannelReceive" disabled></textarea>
+    <div id="buttons">
+      <button id="startButton">Start</button>
+      <button id="sendButton">Send</button>
+      <button id="closeButton">Stop</button>
+    </div>
+    <hr />
+    <h1>Websocket</h1>
+    <textarea
+      rows="5"
+      cols="50"
+      id="websocket"
+      disabled
+      placeholder="1: Press Start; 2: Enter text; 3: Press Send."
+    ></textarea>
+    <textarea rows="5" cols="50" id="websocketReceive" disabled></textarea>
+    <div id="buttons">
+      <button id="_startButton">Start</button>
+      <button id="_sendButton">Send</button>
+      <button id="_closeButton">Stop</button>
+    </div>
+    <script src="js/dataChannel.js"></script>
+    <script src="js/websocket.js"></script>
+  </body>
+</html>
